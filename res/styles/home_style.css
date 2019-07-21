@@ -1,0 +1,177 @@
+/**
+ * this file contains CSS-rules for all the pages except for the login and register
+ */
+
+html,
+body {
+  	height: 100%;
+}
+
+.articleShowBg {
+
+	background-color: #ededed;
+}
+
+.contentContainerBg {
+
+	background-color: #fcfcfc;
+}
+
+.scrollable {
+
+	overflow-y: scroll;
+}
+
+.searchBar {
+
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	/*font-style: italic;*/
+	font-size: 2em;
+	height: 3em;
+}
+
+.heading, .spicyText {
+
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+}
+
+.secondaryInfo {
+
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 1.3em;
+	font-style: italic;
+}
+
+.hint {
+
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.articleContent {
+
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 1.4em;
+}
+
+.titleLink {
+
+	text-decoration: none;
+}
+
+.navbar {
+  	margin-bottom: 20px;
+}
+
+.thumbnail {
+    padding:0px;
+}
+.panel {
+	position:relative;
+}
+.panel>.panel-heading:after,.panel>.panel-heading:before{
+	position:absolute;
+	top:11px;left:-16px;
+	right:100%;
+	width:0;
+	height:0;
+	display:block;
+	content:" ";
+	border-color:transparent;
+	border-style:solid solid outset;
+	pointer-events:none;
+}
+.panel>.panel-heading:after{
+	border-width:7px;
+	border-right-color:#f7f7f7;
+	margin-top:1px;
+	margin-left:2px;
+}
+.panel>.panel-heading:before{
+	border-right-color:#ddd;
+	border-width:8px;
+}
+
+.comments-main{
+  background: #FFF;
+}
+.comment time, .comment:hover time,.icon-rocknroll, .like-count {
+  /*-webkit-transition: .25s opacity linear;
+  transition: .25s opacity linear;*/
+}
+.comments-main ul li{
+  list-style: none;
+}
+.comments .comment {
+  padding: 5px 10px;
+  background: #424242;
+}
+/*.comments .comment:hover time{
+  opacity: 1;
+}*/
+.comments .user-img img {
+  width: 50px;
+  height: 50px;
+}
+.comments .comment h4 {
+  display: inline-block;
+  font-size: 1.5em;
+}
+.comments .comment h4 a {
+  color: #ebebeb;
+  text-decoration: none;
+}
+.comments .comment .icon-rocknroll {
+  color: #545454;
+  font-size: .85rem;
+}
+.comments .comment .icon-rocknroll:hover {
+  opacity: .5;
+}
+.comments .comment time,.comments .comment .like-count,.comments .comment .icon-rocknroll {
+  font-size: 1em;
+  opacity: 1;
+}
+.comments .comment time, .comments .comment .like-count {
+  font-weight: 300;
+}
+.comments .comment p {
+  font-size: 1.8em;
+}
+.comments .comment p .reply {
+  color: #BFBFA8;
+  cursor: pointer;
+}
+.comments .comment .active {
+  opacity: 1;
+}
+.icon-rocknroll {
+  background: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 .125rem 0 0;
+}
+.comments .comment:hover .icon-rocknroll,.comments .comment:hover .like-count {
+  opacity: 1;
+}
+.comment-box-main{
+  background: #EDEDED;
+}
+
+/* il commento cambia dimensione se lo schermo è veramente piccolo */
+@media (min-width: 320px) and (max-width: 480px){
+  .comments .comment h4 {
+    font-size: 1.5em;
+  }
+  .comments .comment p{
+    font-size: 1.3em;
+  }
+  .comment-box-main .send-btn button{
+    margin-left: 5px;
+  }
+}
